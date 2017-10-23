@@ -47,3 +47,58 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+function validateForm() {
+    var un = document.loginform.usr.value;
+    var pw = document.loginform.pword.value;
+    var username = "admin";
+    var password = "admin";
+    if ((un == username) && (pw == password)) {
+        window.location = "home.html";
+        return true;
+    } else {
+        alert("Login was unsuccessful, please check your username and password");
+        return false;
+    }
+}
+ 
+
+        $(document).on("pagecreate", "#fade_page1", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel1").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel1").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page2", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel2").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel2").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page3", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel3").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel3").panel("open");
+
+                    }
+                }
+            });
+        });
+       
