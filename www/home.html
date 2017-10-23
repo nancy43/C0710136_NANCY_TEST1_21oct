@@ -5,23 +5,491 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <style>
+     <script>
+  
+        $(document).on("pagecreate", "#fade_page1", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel1").panel("open");
 
-    </style>
+                    } else if (e.type === "swiperight") {
+                        $("#panel1").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page2", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel2").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel2").panel("open");
+
+                    }
+                }
+            });
+        });
+        $(document).on("pagecreate", "#fade_page3", function() {
+            $(document).on("swiperight", function(e) {
+                if ($.mobile.activePage.jqmData("panel") !== "open") {
+                    if (e.type === "swipeleft") {
+                        $("#panel3").panel("open");
+
+                    } else if (e.type === "swiperight") {
+                        $("#panel3").panel("open");
+
+                    }
+                }
+            });
+        });
+       
+
+    </script>
+   
 </head>
 
 <body>
-    <div class="ui-grid-b" style="text-align:center;">
-        <div class="ui-block-a">
-            <a href="book.html"><img src="img/a.jpg"></a>
-        </div>
-        <div class="ui-block-b">
-            <a href="book.html"><img src="img/c.jpg"></a>
-        </div>
-        <div class="ui-block-c">
-            <a href="book.html"><img src="img/e.jpg"></a>
+    <div data-role="page" id="home">
+        <div data-role="header">
+    <h2>SELECT A BOOK</h2>
 
+
+    <div class="ui-block-b">
+        <div class="ui-body ui-body-a">
+            
+            <div class="ui-block-a">
+               <p> <a href="#page1" class = "ui-btn ui-corner-all ui-btn-inline" data-transition="slidefade"><img src = "img/a.jpg" width="150px" height="200px"></a></p>
+            </div>
+          <div class="ui-block-a">
+               <p> <a href="#page2" class = "ui-btn ui-corner-all ui-btn-inline" data-transition="slidefade"><img src = "img/b.jpg" width="150px" height="200px"></a></p>
+            </div>
+            <div class="ui-block-a">
+               <p> <a href="#page4" class = "ui-btn ui-corner-all ui-btn-inline" data-transition="slidefade"><img src = "img/c.jpg" width="150px" height="200px"></a></p>
+            </div>
+              <div class="ui-block-a">
+                <p><a href="#page5" class = "ui-btn ui-corner-all ui-btn-inline" data-transition="slidefade"><img src = "img/d.jpg" width="150px" height="200px"></a></p>
+            </div>
+        </div>
     </div>
+</div>
+</div>
+</body>
+ <div data-role="page" id="page1">
+        <div data-role="header">
+            <h2>YOUTH</h2>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                         <p> <a href="book.html#1"><img src = "img/a.jpg" width="500px" height="500px"></a></p>                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    BY: ISSAC ASIMOV
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    INTRODUCTION:
+                                    Youth is short story which falls in science fiction genre written by Isaac Asimov, an American writer and a science academician remembered for his numerous popular science books and other literary works in the form of short stories, mystery novels and non-fiction writings notably The Solar System and Back , The Key Word and Other Mysteries, The Disappearing Man and Other Mysteries, The End of Eternity and Asimov's Guide to the Bible.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    SHORT STORY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class = "ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="slidefade">Books </a>
+                                   
+                                </td>
+                            </tr>
+                             <a class = "ui-btn ui-btn-icon-left ui-icon-arrow-r" class =  "ui-btn ui-shadow" href="#fade_page1" data-transition="pop">START READING</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+     <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1 id="2">TONYH AND THE BEETLES</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                         <p> <a href="book.html#1"><img src = "img/b.jpg" width="500px" height="500px"></a></p>                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    BY PHILIP K. DIC
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    INTRODUCTION:
+                                    Tony and the Beetles takes place far in the future when Earth's enormous colonial empire is well established but the question is, how long can it last? 10 year old Tony grows up fast when history catches up with the human race. A sobering look at human history .. and our probable future. Two very different stories but both entertaining
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    SHORT STORY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class = "ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="slidefade">Books </a>
+                                   
+                                </td>
+                            </tr>
+                             <a class = "ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" class =  "ui-btn ui-shadow" data-transition="pop">START READING</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    
+        </div>
+    </div>
+     <div data-role="page" id="page4">
+        <div data-role="header">
+            <h1>WHAT MEN LIVE BY</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                         <p> <a href="book.html#1"><img src = "img/c.jpg" width="500px" height="500px"></a></p>                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    BY GRAF LEO
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    INTRODUCTION:
+                                    What Men Live By and Other Tales is a collection of most popular short stories written by the Russian novelist Graf Leo Tolstoy, who is remembered for his novels War and peace, A Confession, and Anna Karenina. This collection contains three short stories titled as What do men live by?, How Much Land Does a Man Need?, and Twenty-three Tales/The Coffee-House of Surat.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    SHORT STORY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class = "ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="slidefade">Books </a>
+                                   
+                                </td>
+                            </tr>
+                             <a class = "ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop" class =  "ui-btn ui-shadow">START READING</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+     <div data-role="page" id="page5">
+        <div data-role="header">
+            <h1>THE WENDIGO</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-solo" style="text-align:center;">
+                <div class="ui-block-a">
+                    <div>
+                         <p> <a href="book.html#1"><img src = "img/d.jpg" width="500px" height="500px"></a></p>                    </div>
+                    <div>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="100%">
+                                    BY ALGERNON BLACKWOOD
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    INTRODUCTION :
+                                    The Wendigo is a horror short story written by Algernon Blackwood, an English novelist remembered for his proficiency in narrating horror in the blend of nature.His notable works include Incredible Adventures, The Human Chord, Julius LeVallon, Sambo and Snitch, The Crossing, and The Doll and One Other. The Wendigo is set on the campfire of a haunting party in Canada, which deals with terror of the wild and beauty.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    HORROR SHORT STORY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="100%">
+                                    <a class = "ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" href="#home" data-transition="turn">Books </a>
+                                   
+                                </td>
+                            </tr>
+                             <a class = "ui-btn ui-btn-icon-left ui-icon-arrow-r" href="#fade_page1" data-transition="pop" class =  "ui-btn ui-shadow">START READING</a>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    
+
+
+        </div>
+    </div>
+     <div data-role = "page" id = "fade_page1">
+         <div data-role = "header">
+            <h2>CHAPTER 1</h2>
+         </div>
+      
+         <div data-role = "main" class = "ui-content">
+            <p>Red and Slim found the two strange little animals the morning
+after they heard the thunder sounds. They knew that they could
+never show their new pets to their parents.He sat up stiffly in bed. Seconds passed while he interpreted his
+strange surroundings. He wasn't in his own home, of course. This
+was out in the country. It was colder than it should be and there
+was green at the window.
+"Slim!"
+The call was a hoarse, urgent whisper, and the youngster
+bounded to the open window.
+Slim wasn't his real name, but the new friend he had met the day
+before had needed only one look at his slight figure to say, "You're
+Slim." He added, "I'm Red."
+Red wasn't his real name, either, but its appropriateness was
+obvious. They were friends instantly with the quick unquestioning
+friendship of young ones not yet quite in adolescence, before even
+the first stains of adulthood began to make their appearance.
+Slim cried, "Hi, Red!" and waved cheerfully, still blinking the
+sleep out of himself.
+Red kept to his croaking whisper, "Quiet! You want to wake
+somebody?"
+Slim noticed all at once that the sun scarcely topped the low hills
+in the east, that the shadows were long and soft, and that the grass
+was wet.
+Slim said, more softly, "What's the matter?"
+Red only waved for him to come out.
+Slim dressed quickly, gladly confining his morning wash to the
+momentary sprinkle of a little lukewarm water. He let the air dry
+the exposed portions of his body as he ran out, while bare skin
+grew wet against the dewy grass.
+Red said, "You've got to be quiet. If Mom wakes up or Dad or
+your Dad or even any of the hands then it'll be 'Come on in or
+you'll catch your death of cold.'"
+He mimicked voice and tone faithfully, so that Slim laughed and
+thought that there had never been so funny a fellow as Red.
+Slim said, eagerly, "Do you come out here every day like this,
+Red? Real early? It's like the whole world is just yours, isn't it,
+Red? No one else around and all like that." He felt proud at being
+allowed entrance into this private world.
+</p>
+           
+         </div>
+
+         <div data-role = "footer">
+             <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="slidefade">home</a>
+                </div>
+               
+                <div class="ui-block-c">
+                    <a href="#fade_page2" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="slidefade">right</a>
+                </div>
+            </div>
+           
+         </div>
+         <div data-role="panel" id="panel1">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/a.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/b.jpg"></a>
+                </li>
+               
+                <li>
+                    <a href="#page4"><img src="img/c.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/d.jpg"></a>
+                </li>
+              
+               
+            </ul>
+        </div>
+      </div>
+
+      <div data-role = "page" id = "fade_page2">
+         <div data-role = "header">
+            <h2>....CONTINUED</h2>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <p>Red stared at him sidelong. He said carelessly, "I've been up for
+hours. Didn't you hear it last night?"
+"Hear what?"
+"Thunder."
+"Was there a thunderstorm?" Slim never slept through a
+thunderstorm.
+"I guess not. But there was thunder. I heard it, and then I went
+to the window and it wasn't raining. It was all stars and the sky
+was just getting sort of almost gray. You know what I mean?"
+Slim had never seen it so, but he nodded.
+"So I just thought I'd go out," said Red.
+They walked along the grassy side of the concrete road that split
+the panorama right down the middle all the way down to where it
+vanished among the hills. It was so old that Red's father couldn't
+tell Red when it had been built. It didn't have a crack or a rough
+spot in it.
+Red said, "Can you keep a secret?"
+"Sure, Red. What kind of a secret?"
+"Just a secret. Maybe I'll tell you and maybe I won't. I don't
+know yet." Red broke a long, supple stem from a fern they passed,
+methodically stripped it of its leaflets and swung what was left
+whip-fashion. For a moment, he was on a wild charger, which
+reared and champed under his iron control. Then he got tired,
+tossed the whip aside and stowed the charger away in a corner of
+his imagination for future use.
+</p>
+            
+         </div>
+
+         <div data-role = "footer">
+             <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page1" data-transition="slidefade">left</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="slidefade">home</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page3" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="slidefade">next</a>
+                </div>
+            </div>
+           
+         </div>
+         <div data-role="panel" id="panel2">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/a.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/b.jpg"></a>
+                </li>
+                
+                <li>
+                    <a href="#page4"><img src="img/c.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/d.jpg"></a>
+                </li>
+               
+               
+            </ul>
+        </div>
+      </div>
+
+      <div data-role = "page" id = "fade_page3">
+         <div data-role = "header">
+            <h2>...CONTINUED</h2>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <p>He said, "There'll be a circus around."
+Slim said, "That's no secret. I knew that. My Dad told me even
+before we came here—"
+"That's not the secret. Fine secret! Ever see a circus?"
+"Oh, sure. You bet."
+"Like it?"
+"Say, there isn't anything I like better."
+Red was watching out of the corner of his eyes again. "Ever think
+you would like to be with a circus? I mean, for good?"
+Slim considered, "I guess not. I think I'll be an astronomer like
+my Dad. I think he wants me to be."
+"Huh! Astronomer!" said Red.
+Slim felt the doors of the new, private world closing on him and
+astronomy became a thing of dead stars and black, empty space.
+He said, placatingly, "A circus would be more fun."
+"You're just saying that."
+"No, I'm not. I mean it."
+Red grew argumentative. "Suppose you had a chance to join the
+circus right now. What would you do?"
+"I—I—"
+"See!" Red affected scornful laughter.
+Slim was stung. "I'd join up."</p>
+           
+         </div>
+
+         <div data-role = "footer">
+             <div class="ui-grid-b" style="margin-left:15%;">
+                <div class="ui-block-a">
+                    <a class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-btn-icon-notext" href="#fade_page2" data-transition="slidefade">previous</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext" href="#home" data-transition="slidefade">home</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#fade_page1" class="ui-btn ui-icon-arrow-r ui-btn-icon-left ui-btn-icon-notext" data-transition="slidefade">first</a>
+                </div>
+            </div>
+           
+         </div>
+         <div data-role="panel" id="panel3">
+            <h2>Book List</h2>
+            <ul data-role="listview">
+                <li>
+                    <a href="#page1"><img src="img/a.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page2"><img src="img/b.jpg"></a>
+                </li>
+              
+                <li>
+                    <a href="#page4"><img src="img/c.jpg"></a>
+                </li>
+                <li>
+                    <a href="#page5"><img src="img/d.jpg"></a>
+                </li>
+               
+               
+            </ul>
+        </div>
+      </div>
+       
 </body>
 
 </html>
